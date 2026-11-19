@@ -1,0 +1,66 @@
+# 卡组扫盘 GA：matrix 并行跑多个种子段（多轮防偶发），找最强"速耐力智智+友"卡组。
+# 固定 gen9 冠军旋钮做干净对照；二进制+data 自包含，免编译。
+name: GA卡组扫盘(多轮防偶发)
+
+on:
+  workflow_dispatch:
+    inputs:
+      gens:
+        description: '每轮代数'
+        default: '12'
+      games:
+        description: '每候选局数'
+        default: '40'
+      verify:
+        description: '冠军复核局数'
+        default: '200'
+  push:
+    paths:
+      - 'ga-scan/**'
+      - '.github/workflows/ga-deck-scan.yml'
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        include:
+          - round: 0
+            seed: 920000
+          - round: 1
+            seed: 921000
+          - round: 2
+            seed: 922000
+          - round: 3
+            seed: 923000
+          - round: 4
+            seed: 924000
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 安装依赖
+        run: pip install numpy
+      - name: 赋予二进制执行权限
+        run: chmod +x ga-scan/bin/cardtest
+      - name: 运行扫盘GA round ${{ matrix.round }} (seed=${{ matrix.seed }})
+        working-directory: ga-scan
+        env:
+          SEED: ${{ matrix.seed }}
+          ROUND: ${{ matrix.round }}
+          GENS: ${{ github.event.inputs.gens || '12' }}
+          GAMES: ${{ github.event.inputs.games || '40' }}
+          VERIFY: ${{ github.event.inputs.verify || '200' }}
+        run: bash run.sh
+      - name: 上传该轮结果
+        uses: actions/upload-artifact@v4
+        with:
+          name: ga-scan-round-${{ matrix.round }}
+          path: |
+            ga-scan/out_r${{ matrix.round }}/summary.json
+            ga-scan/out_r${{ matrix.round }}/round0/best.json
+            ga-scan/out_r${{ matrix.round }}/round0/gens.jsonl
+          if-no-files-found: warn
