@@ -118,16 +118,53 @@ def fitness_of(metrics: dict, objective: str, friend_penalty: float) -> float:
     return metrics[key] - friend_penalty * (1 - metrics["friend_full"])
 
 
-def _wit_same(idx, pool) -> bool:
-    """两张智卡是否指向同一张卡（槽3、槽4各是一份type4池，按idrank比较）。"""
-    return pool[3][idx[3]]["idrank"] == pool[4][idx[4]]["idrank"]
+def _conflict_slots(idx, pool) -> set[int]:
+    """返回编成冲突的卡位集合：同角色(chara_id)或同卡(idrank)重复。
+    引擎规则：存在重复人物(chara_id)即拒；两张智卡同卡也拒。chara=None 不参与角色判重。"""
+    seen_chara, seen_idrank = {}, {}
+    conflict = set()
+    for i, j in enumerate(idx):
+        c = pool[i][j]
+        ir = c["idrank"]
+        if ir in seen_idrank:
+            conflict.add(i); conflict.add(seen_idrank[ir])
+        else:
+            seen_idrank[ir] = i
+        ch = c.get("chara")
+        if ch is not None:
+            if ch in seen_chara:
+                conflict.add(i); conflict.add(seen_chara[ch])
+            else:
+                seen_chara[ch] = i
+    return conflict
+
+
+def _fix_conflicts(idx, pool, rng) -> list[int]:
+    """迭代重抽冲突卡位直到编成合法；友人槽(5)固定(仅1张)不动。"""
+    ids = list(idx)
+    for _ in range(100):
+        bad = _conflict_slots(ids, pool)
+        if not bad:
+            return ids
+        progressed = False
+        for i in sorted(bad, reverse=True):
+            if i == 5:  # 友人固定，跳过（其冲突方是非友人槽，会被重抽）
+                continue
+            if len(pool[i]) <= 1:
+                continue
+            ids[i] = int(rng.integers(len(pool[i])))
+            progressed = True
+        if not progressed:
+            # 全部冲突槽都不可动（极端），重置非友人槽
+            for i in range(5):
+                if len(pool[i]) > 1:
+                    ids[i] = int(rng.integers(len(pool[i])))
+    return ids
 
 
 def random_deck(pool, rng) -> list[int]:
     ids = [int(rng.integers(len(p))) for p in pool]
-    while _wit_same(ids, pool):
-        ids[4] = int(rng.integers(len(pool[4])))
-    return ids
+    return _fix_conflicts(ids, pool, rng)
 
 
 def mutate(ids, pool, rng, pmut):
@@ -135,17 +172,13 @@ def mutate(ids, pool, rng, pmut):
     for i in range(len(ids)):
         if rng.random() < pmut:
             ids[i] = int(rng.integers(len(pool[i])))
-    while _wit_same(ids, pool):
-        ids[4] = int(rng.integers(len(pool[4])))
-    return ids
+    return _fix_conflicts(ids, pool, rng)
 
 
 def crossover(a, b, rng, pool):
     mask = rng.random(len(a)) < 0.5
     ids = [x if m else y for x, y, m in zip(a, b, mask)]
-    while _wit_same(ids, pool):
-        ids[4] = b[4]
-    return ids
+    return _fix_conflicts(ids, pool, rng)
 
 
 def log(path: Path, obj):
