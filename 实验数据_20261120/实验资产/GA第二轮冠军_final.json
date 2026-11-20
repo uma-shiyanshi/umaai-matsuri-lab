@@ -1,0 +1,98 @@
+{
+ "gen": 100,
+ "sigma": 0.021409471878823912,
+ "mean": {
+  "knobs": {
+   "pt_favor_rate": 1.3580213155511858,
+   "self_race": 0.0,
+   "friend_outing_early": 1.0,
+   "rest_vital": 80.0,
+   "checkpoint_margin": 4.0,
+   "act_level_target": 3.0,
+   "free_race_urgency": 2.72263575331719,
+   "status_weights[0]": 0.694951089433408,
+   "status_weights[1]": 0.8234011023758727,
+   "status_weights[2]": 0.6059288875441988,
+   "status_weights[3]": 0.13337860968778537,
+   "status_weights[4]": 0.028076747647242068,
+   "weights.vital": 6.192205925144412,
+   "weights.motivation": 16.194313012038634,
+   "weights.friendship": 11.572816828226902,
+   "weights.hint": 21.090330285034547,
+   "weights.gauge": 49.21060625985746,
+   "weights.act_level": 68.23203057516642,
+   "weights.checkpoint": 808.8971217599058,
+   "weights.fat": 285.02095973876436,
+   "advice.card": 1.0999497304389452,
+   "advice.npc": 0.18318465447639348,
+   "advice.train": 0.24332429011040527,
+   "advice.keiko": 2.2534470638579123,
+   "advice.level": 0.8048178098768918,
+   "advice.milestone": 0.40316166328219755,
+   "advice.route": 507.7775640835796,
+   "dynamic.status_catchup": 1.7085218827750939,
+   "dynamic.act_catchup": 0.28453440923624473,
+   "dynamic.vital_decay": 0.012301662940944435,
+   "dynamic.vital_idle": 1.8339519106794848,
+   "dynamic.keiko_tempo": 0.9991204492612328,
+   "overflow.margin": 0.05501031429647333,
+   "overflow.tilt": 0.05682368426516954,
+   "overflow.keep": 0.09055769562073868,
+   "endgame.keiko": 581.5294189785063,
+   "endgame.scarcity": 0.7576544345924479,
+   "endgame.level": 73.41639281876857,
+   "endgame.normal_penalty": 280.7855418657733
+  },
+  "fusion": [
+   501,
+   101,
+   201,
+   301,
+   401
+  ],
+  "advice": {
+   "t2": [
+    101,
+    201,
+    501,
+    301,
+    401
+   ],
+   "t11": [
+    101,
+    301,
+    501,
+    201,
+    401
+   ],
+   "t23": [
+    101,
+    501,
+    401,
+    301,
+    201
+   ],
+   "t35": [
+    501,
+    301,
+    101,
+    201,
+    401
+   ],
+   "t47": [
+    501,
+    101,
+    401,
+    201,
+    301
+   ],
+   "t59": [
+    501,
+    101,
+    401,
+    201,
+    301
+   ]
+  }
+ }
+}

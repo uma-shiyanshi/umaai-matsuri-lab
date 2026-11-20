@@ -1,0 +1,63 @@
+[decks.w2_final]
+comp = [1, 1, 1, 0, 2]
+
+[decks.w2_final.fusion]
+year2 = [{ base = 501, target = 601 }, { base = 101, target = 701 }]
+year3 = [{ base = 201, target = 801 }, { base = 301, target = 901 }, { base = 401, target = 1001 }]
+
+[decks.w2_final.advice]
+t2 = [101, 201, 501, 301, 401]
+t11 = [101, 301, 501, 201, 401]
+t23 = [101, 501, 401, 301, 201]
+t35 = [501, 301, 101, 201, 401]
+t47 = [501, 101, 401, 201, 301]
+t59 = [501, 101, 401, 201, 301]
+
+[decks.w2_final.trainer]
+pt_favor_rate = 2.2
+self_race = false
+friend_outing_early = true
+rest_vital = 75
+checkpoint_margin = 3
+act_level_target = 3
+free_race_urgency = 1.373165
+status_weights = [0.614248, 0.573257, 0.542746, 0.077162, 0.024016]
+
+[decks.w2_final.trainer.weights]
+vital = 4.488813
+motivation = 7.949619
+friendship = 8.0
+hint = 20.0
+gauge = 41.401886
+act_level = 65.335547
+checkpoint = 899.191667
+fat = 318.649848
+
+[decks.w2_final.trainer.advice]
+card = 2.301723
+npc = 0.063491
+train = 0.181077
+keiko = 1.817824
+level = 0.774184
+milestone = 0.313946
+route = 709.000535
+status_limit = 0.0
+assist = 0.0
+
+[decks.w2_final.trainer.dynamic]
+status_catchup = 1.926988
+act_catchup = 0.072309
+vital_decay = 0.011004
+vital_idle = 1.151637
+keiko_tempo = 1.078349
+
+[decks.w2_final.trainer.overflow]
+margin = 0.038995
+tilt = 1.845868
+keep = 0.057113
+
+[decks.w2_final.trainer.endgame]
+keiko = 394.9085
+scarcity = 0.715231
+level = 64.830756
+normal_penalty = 294.799509

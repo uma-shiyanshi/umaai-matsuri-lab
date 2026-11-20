@@ -1,0 +1,65 @@
+# 仓库地址对照表：xf8410 -> uma-shiyanshi
+
+> 59 个仓库已从 `github.com/xf8410/` 转移到 `github.com/uma-shiyanshi/`。旧地址会自动跳转，但建议更新文档/脚本/submodule 引用。
+
+| # | 仓库名 | 旧地址 | 新地址 |
+|---|---|---|---|
+| 1 | Hachimi-Edge | https://github.com/xf8410/Hachimi-Edge | https://github.com/uma-shiyanshi/Hachimi-Edge |
+| 2 | hachimi-edge-cn | https://github.com/xf8410/hachimi-edge-cn | https://github.com/uma-shiyanshi/hachimi-edge-cn |
+| 3 | hachimi-edge-gala | https://github.com/xf8410/hachimi-edge-gala | https://github.com/uma-shiyanshi/hachimi-edge-gala |
+| 4 | hachimi-template-gala | https://github.com/xf8410/hachimi-template-gala | https://github.com/uma-shiyanshi/hachimi-template-gala |
+| 5 | hlpatch | https://github.com/xf8410/hlpatch | https://github.com/uma-shiyanshi/hlpatch |
+| 6 | hlpatch-lite | https://github.com/xf8410/hlpatch-lite | https://github.com/uma-shiyanshi/hlpatch-lite |
+| 7 | hlpatch-matsuri-panorama | https://github.com/xf8410/hlpatch-matsuri-panorama | https://github.com/uma-shiyanshi/hlpatch-matsuri-panorama |
+| 8 | hlpatch-readall-spec | https://github.com/xf8410/hlpatch-readall-spec | https://github.com/uma-shiyanshi/hlpatch-readall-spec |
+| 9 | hlpatch-reasoning-log | https://github.com/xf8410/hlpatch-reasoning-log | https://github.com/uma-shiyanshi/hlpatch-reasoning-log |
+| 10 | hlpatch-so-recovery | https://github.com/xf8410/hlpatch-so-recovery | https://github.com/uma-shiyanshi/hlpatch-so-recovery |
+| 11 | matsuri-adapter | https://github.com/xf8410/matsuri-adapter | https://github.com/uma-shiyanshi/matsuri-adapter |
+| 12 | matsuri-capture | https://github.com/xf8410/matsuri-capture | https://github.com/uma-shiyanshi/matsuri-capture |
+| 13 | ramen-manual | https://github.com/xf8410/ramen-manual | https://github.com/uma-shiyanshi/ramen-manual |
+| 14 | ramen-scenario-analyzer-mobile | https://github.com/xf8410/ramen-scenario-analyzer-mobile | https://github.com/uma-shiyanshi/ramen-scenario-analyzer-mobile |
+| 15 | ramen-training-advisor | https://github.com/xf8410/ramen-training-advisor | https://github.com/uma-shiyanshi/ramen-training-advisor |
+| 16 | so-chonggou | https://github.com/xf8410/so-chonggou | https://github.com/uma-shiyanshi/so-chonggou |
+| 17 | uma-algo-catalog | https://github.com/xf8410/uma-algo-catalog | https://github.com/uma-shiyanshi/uma-algo-catalog |
+| 18 | uma-algo-lab | https://github.com/xf8410/uma-algo-lab | https://github.com/uma-shiyanshi/uma-algo-lab |
+| 19 | uma-algo-race | https://github.com/xf8410/uma-algo-race | https://github.com/uma-shiyanshi/uma-algo-race |
+| 20 | uma-algo-reports | https://github.com/xf8410/uma-algo-reports | https://github.com/uma-shiyanshi/uma-algo-reports |
+| 21 | uma-container | https://github.com/xf8410/uma-container | https://github.com/uma-shiyanshi/uma-container |
+| 22 | uma-data | https://github.com/xf8410/uma-data | https://github.com/uma-shiyanshi/uma-data |
+| 23 | uma-external-atlas | https://github.com/xf8410/uma-external-atlas | https://github.com/uma-shiyanshi/uma-external-atlas |
+| 24 | uma-festa-mobile-ai | https://github.com/xf8410/uma-festa-mobile-ai | https://github.com/uma-shiyanshi/uma-festa-mobile-ai |
+| 25 | uma-hachimi-mod | https://github.com/xf8410/uma-hachimi-mod | https://github.com/uma-shiyanshi/uma-hachimi-mod |
+| 26 | uma-il2cpp-metadata | https://github.com/xf8410/uma-il2cpp-metadata | https://github.com/uma-shiyanshi/uma-il2cpp-metadata |
+| 27 | uma-jp-688-apk | https://github.com/xf8410/uma-jp-688-apk | https://github.com/uma-shiyanshi/uma-jp-688-apk |
+| 28 | uma-juece-ramen | https://github.com/xf8410/uma-juece-ramen | https://github.com/uma-shiyanshi/uma-juece-ramen |
+| 29 | uma-kouryaku-tools-mirror | https://github.com/xf8410/uma-kouryaku-tools-mirror | https://github.com/uma-shiyanshi/uma-kouryaku-tools-mirror |
+| 30 | uma-landscape | https://github.com/xf8410/uma-landscape | https://github.com/uma-shiyanshi/uma-landscape |
+| 31 | uma-links | https://github.com/xf8410/uma-links | https://github.com/uma-shiyanshi/uma-links |
+| 32 | uma-liuchang-hachimiso | https://github.com/xf8410/uma-liuchang-hachimiso | https://github.com/uma-shiyanshi/uma-liuchang-hachimiso |
+| 33 | uma-mech-probe | https://github.com/xf8410/uma-mech-probe | https://github.com/uma-shiyanshi/uma-mech-probe |
+| 34 | uma-mobile-decision-pipeline | https://github.com/xf8410/uma-mobile-decision-pipeline | https://github.com/uma-shiyanshi/uma-mobile-decision-pipeline |
+| 35 | uma-patcher-gala | https://github.com/xf8410/uma-patcher-gala | https://github.com/uma-shiyanshi/uma-patcher-gala |
+| 36 | uma-ramen-data | https://github.com/xf8410/uma-ramen-data | https://github.com/uma-shiyanshi/uma-ramen-data |
+| 37 | uma-ramen-nn-lab | https://github.com/xf8410/uma-ramen-nn-lab | https://github.com/uma-shiyanshi/uma-ramen-nn-lab |
+| 38 | uma-ramen-nn-lab-exp010 | https://github.com/xf8410/uma-ramen-nn-lab-exp010 | https://github.com/uma-shiyanshi/uma-ramen-nn-lab-exp010 |
+| 39 | uma-ramen-teacher-lab | https://github.com/xf8410/uma-ramen-teacher-lab | https://github.com/uma-shiyanshi/uma-ramen-teacher-lab |
+| 40 | uma-saidao-shuju | https://github.com/xf8410/uma-saidao-shuju | https://github.com/uma-shiyanshi/uma-saidao-shuju |
+| 41 | uma-sim-residual | https://github.com/xf8410/uma-sim-residual | https://github.com/uma-shiyanshi/uma-sim-residual |
+| 42 | uma-single-mode-disasm | https://github.com/xf8410/uma-single-mode-disasm | https://github.com/uma-shiyanshi/uma-single-mode-disasm |
+| 43 | uma-so-reforge | https://github.com/xf8410/uma-so-reforge | https://github.com/uma-shiyanshi/uma-so-reforge |
+| 44 | uma-train | https://github.com/xf8410/uma-train | https://github.com/uma-shiyanshi/uma-train |
+| 45 | uma-wiki | https://github.com/xf8410/uma-wiki | https://github.com/uma-shiyanshi/uma-wiki |
+| 46 | uma-workbench | https://github.com/xf8410/uma-workbench | https://github.com/uma-shiyanshi/uma-workbench |
+| 47 | uma-zmyz | https://github.com/xf8410/uma-zmyz | https://github.com/uma-shiyanshi/uma-zmyz |
+| 48 | umaai-jidianbei | https://github.com/xf8410/umaai-jidianbei | https://github.com/uma-shiyanshi/umaai-jidianbei |
+| 49 | umaai-matsuri | https://github.com/xf8410/umaai-matsuri | https://github.com/uma-shiyanshi/umaai-matsuri |
+| 50 | umaai-matsuri-baseline | https://github.com/xf8410/umaai-matsuri-baseline | https://github.com/uma-shiyanshi/umaai-matsuri-baseline |
+| 51 | umaai-matsuri-fork-backup | https://github.com/xf8410/umaai-matsuri-fork-backup | https://github.com/uma-shiyanshi/umaai-matsuri-fork-backup |
+| 52 | umaai-matsuri-lab | https://github.com/xf8410/umaai-matsuri-lab | https://github.com/uma-shiyanshi/umaai-matsuri-lab |
+| 53 | umaai-next | https://github.com/xf8410/umaai-next | https://github.com/uma-shiyanshi/umaai-next |
+| 54 | umaai-rs | https://github.com/xf8410/umaai-rs | https://github.com/uma-shiyanshi/umaai-rs |
+| 55 | umaai-rs-fanfix | https://github.com/xf8410/umaai-rs-fanfix | https://github.com/uma-shiyanshi/umaai-rs-fanfix |
+| 56 | umaai-rs-fanskip | https://github.com/xf8410/umaai-rs-fanskip | https://github.com/uma-shiyanshi/umaai-rs-fanskip |
+| 57 | umahachimios | https://github.com/xf8410/umahachimios | https://github.com/uma-shiyanshi/umahachimios |
+| 58 | ura-replay | https://github.com/xf8410/ura-replay | https://github.com/uma-shiyanshi/ura-replay |
+| 59 | youxishuju-duankou | https://github.com/xf8410/youxishuju-duankou | https://github.com/uma-shiyanshi/youxishuju-duankou |
